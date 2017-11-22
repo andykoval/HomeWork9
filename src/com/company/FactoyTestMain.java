@@ -7,9 +7,9 @@ public class FactoyTestMain {
 
     public static void main(String[] args) {
 
-        Factory factory = FactorySingleton.getFactory("de");
-        Factory factory1 = FactorySingleton.getFactory("ru");
-        Factory factory2 = FactorySingleton.getFactory("jp");
+        Factory factory = Factory.getFactory("de");
+        Factory factory1 = Factory.getFactory("ru");
+        Factory factory2 = Factory.getFactory("jp");
 
         Car car1 = factory.createCar();
         Car car2 = factory1.createCar();
